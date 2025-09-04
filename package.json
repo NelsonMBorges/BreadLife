@@ -6,7 +6,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
     "url": "https://github.com/NelsonMBorges/BreadLife/issues"
   },
   "homepage": "https://github.com/NelsonMBorges/BreadLife#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
 }

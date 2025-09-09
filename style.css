@@ -1,43 +1,28 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
+  color: #333;
 }
 
+/* Cabeçalho */
 header {
   background: #333;
   color: white;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 2rem;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-section {
-  padding: 2rem;
-  background: white;
-  margin: 1rem;
-  border-radius: 8px;
-}
-.logo {
-  height: 50px;
-  width: auto;
-}.titulo-logo {
+.titulo-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .titulo-logo h1 {
@@ -49,4 +34,58 @@ section {
 .logo {
   height: 50px;
   width: auto;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Seções principais */
+section {
+  padding: 2rem;
+  background: white;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Rodapé */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .titulo-logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
